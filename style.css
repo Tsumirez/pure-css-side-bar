@@ -4,3 +4,40 @@
     box-sizing: border-box;
     border:0px none;
 }
+
+main {
+    width:90%;
+    height:80vh;
+    border: 1px solid #333;
+    margin: 2% 5%;
+    box-shadow: 0.25rem 0.25rem .5rem #777;
+}
+
+#sidebar {
+  column-gap: 1rem;
+  display: grid;
+  grid-template-columns: 5rem minmax(0, 1fr);
+  max-width:20rem;
+  transition: max-width 0.6s;
+  background:#eee;
+  border:1px solid #aaa;
+  overflow: hidden;
+}
+
+#sidebar-toggle:checked + #sidebar {
+    max-width:5rem;
+}
+
+#sidebar-toggle:checked + #sidebar  h2{
+    grid-column: 1;
+}
+
+#sidebar h2 {
+    grid-column: span 2;
+    font-family: sans-serif;
+    margin: 1rem 0 .75rem;
+}
+
+#sidebar span {
+    justify-self: center;
+}
