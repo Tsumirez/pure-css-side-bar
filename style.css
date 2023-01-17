@@ -17,25 +17,29 @@ main {
   column-gap: 1rem;
   display: grid;
   grid-template-columns: 5rem minmax(0, 1fr);
-  max-width:20rem;
+  grid-template-rows: repeat(5, 2rem);
+  align-items: center;
+  max-width:15rem;
   transition: max-width 0.6s;
   background:#eee;
   border:1px solid #aaa;
   overflow: hidden;
+  white-space:nowrap;
 }
 
 #sidebar-toggle:checked + #sidebar {
-    max-width:5rem;
-}
-
-#sidebar-toggle:checked + #sidebar  h2{
-    grid-column: 1;
+    max-width: 5rem;
+    /* grid-template-columns: 5rem minmax(0px, 0px); */
 }
 
 #sidebar h2 {
-    grid-column: span 2;
+    grid-column: 1;
     font-family: sans-serif;
     margin: 1rem 0 .75rem;
+}
+
+#sidebar h2 + * {
+    grid-column: 1;
 }
 
 #sidebar span {
