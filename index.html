@@ -1,25 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;300&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
+
 <body>
     <main>
         <input type="checkbox" name="" id="sidebar-toggle">
-        <!-- <label for="sidebar-toggle">toggle</label> -->
-        <aside id="sidebar">
 
+        <aside id="sidebar">
+            <label for="sidebar-toggle">
+                <svg stroke="var(--icon-color)" fill="none" class="hamburger" viewBox="-10 -10 120 120" width="50">
+                    <path class="line" stroke-width="10" 
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                        d="m 20 40 h 60 a 1 1 0 0 1 0 20 h -60 a 1 1 0 0 1 0 -40 h 30 v 70">
+                    </path>
+                    <!-- <line x1="0" x2="100" y1="50" y2="50" stroke-width="1" ></line>
+                    <line x1="50" x2="50" y1="0" y2="100" stroke-width="1" ></line> -->
+                </svg>
+            </label>
             <h2>Profile</h2>
-            <span> icon </span> <a href="">Avatar</a>
-            <span> icon </span> <a href="">Profile Info</a>
-            <span> icon </span> <a href="">Security</a>
+            <span> <img src="./images/icons8-facebook.svg" alt=""> </span> <a href="">Avatar</a>
+            <span> <img src="./images/icons8-linkedin.svg" alt=""> </span> <a href="">Profile Info</a>
+            <span> <img src="./images/icons8-instagram.svg" alt=""> </span> <a href="">Security</a>
 
             <h2>Charts</h2>
         </aside>
     </main>
 </body>
+
 </html>
